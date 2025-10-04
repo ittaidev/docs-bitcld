@@ -1,6 +1,222 @@
-<html>
-  <div class= "text center">
-  <h1>Estamos trabajando en ello</h1>
-  <img src="https://raw.githubusercontent.com/ittaidev/bitcld-images/main/1200x675.jpg"/>
-  </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio en construcción | Próximamente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f1b3d, #1e3a8a, #3b82f6);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .image-container {
+            margin: 30px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .image-container img:hover {
+            transform: scale(1.03);
+        }
+        
+        .progress-container {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 30px 0;
+            overflow: hidden;
+            height: 10px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            width: 75%;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            border-radius: 10px;
+            animation: progress-animation 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes progress-animation {
+            0% { width: 70%; }
+            100% { width: 75%; }
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #1f2937;
+            color: #e5e7eb;
+            padding: 2rem 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        footer p {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .footer-social a {
+            color: #d1d5db;
+            transition: color 0.3s;
+        }
+        
+        .footer-social a:hover {
+            color: white;
+        }
+        
+        .footer-social i {
+            font-size: 1.25rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Estamos trabajando en algo increíble</h1>
+        <p class="subtitle">Nuestro sitio web está en construcción. Estamos trabajando arduamente para brindarte la mejor experiencia. ¡Vuelve pronto!</p>
+        
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/ittaidev/bitcld-images/main/1200x675.jpg" alt="Sitio en construcción">
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        
+
+        
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p class="text-lg">© 2025 Proyecto Final ASIR · Desarrollado por Ittai Rivero (@ittaidev)</p>
+            <div class="footer-social">
+                <a href="https://github.com/ittaidev" class="text-gray-300 hover:text-white transition">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://x.com/ittaidev" class="text-gray-300 hover:text-white transition">
+                    <i class="fab fa-x-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
